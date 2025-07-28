@@ -1,0 +1,186 @@
+Exoplanet specifications
+
+-----Hatp1b-----
+spec_file = 'hatp1b-nrs1.xc'
+name=spec_file.split('.')[0]
+lc_dir = './lcs/'
+
+if os.path.isdir('./outputs/'+name) is False:
+    os.mkdir('./outputs/'+name)
+save_dir = './outputs/'+name+'/'
+
+grating = 'G395H' 
+ld_model = 'mps1'
+ld_type = 'nonlinear'
+# ld_type = 'quadratic'
+
+'''parameters for limb darkening calculations'''
+Teff = 5980  
+logg = 4.359 
+M_H = 0.13 #metallicity
+
+'''transit parameters'''  #using parameters consistent with MIRI results 
+T0       = 60632.72884122037                  # BJD time of inferior conjunction
+period   = 4.4652998                        # orbital period (days) BJD_TDB
+Rp       = 0.11769220181162808             # planet radius (in units of stellar radii)
+aRs      = 9.984595939543235             # semi-major axis (input a/Rs so units of stellar radii) 
+inc      = 85.74506900998237                # orbital inclination
+ecc      = 0.0                              # eccentricity
+omega    = 253.1                             # longitude of periastron
+
+rho_star = (3*np.pi)/(6.67259e-8*(period*86400)**2)*(aRs)**3     # stellar density (g/cm^3) from a/Rs
+
+-----Hatp26b-----
+spec_file = 'hatp26b-nrs1.xc'
+name=spec_file.split('.')[0]
+lc_dir = './lcs/'
+
+if os.path.isdir('./outputs/'+name) is False:
+    os.mkdir('./outputs/'+name)
+save_dir = './outputs/'+name+'/'
+
+grating = 'G395H' 
+ld_model = 'mps1'
+ld_type = 'nonlinear'
+# ld_type = 'quadratic'
+
+'''parameters for limb darkening calculations'''
+Teff = 5079 
+logg = 4.56 
+M_H = -0.04 
+
+'''transit parameters'''  #using parameters consistent with MIRI results 
+T0       = 60110.3107281131                     # BJD time of inferior conjunction
+period   = 4.23452                         # orbital period (days) BJD_TDB
+Rp       = 0.07204620073250302              # planet radius (in units of stellar radii)
+aRs      = 12.444400764300163                # semi-major axis (input a/Rs so units of stellar radii) 
+inc      = 87.74808520445126               # orbital inclination
+ecc      = 0.0                              # eccentricity
+omega    = 46                            # longitude of periastron
+
+rho_star = (3*np.pi)/(6.67259e-8*(period*86400)**2)*(aRs)**3     # stellar density (g/cm^3) from a/Rs
+
+-----toi 134 b-----
+spec_file = 'toi134b-nrs1.xc'
+name=spec_file.split('.')[0]
+lc_dir = './lcs/'
+
+#toi134 being weird
+
+if os.path.isdir('./outputs/'+name) is False:
+    os.mkdir('./outputs/'+name)
+save_dir = './outputs/'+name+'/'
+
+grating = 'G395H' 
+ld_model = 'mps1'
+ld_type = 'nonlinear'
+# ld_type = 'quadratic'
+
+'''parameters for limb darkening calculations'''
+Teff = 3842  
+logg = 4.84 
+M_H = -.03 #metallicity
+
+'''transit parameters'''  #using parameters consistent with MIRI results 
+T0       = 60113.88027683486           # BJD time of inferior conjunction
+period   = 1.401526                        # orbital period (days) BJD_TDB
+Rp       = 0.025738585287486525                 # planet radius (in units of stellar radii)
+aRs      = 4.005871895235393              # semi-major axis (input a/Rs so units of stellar radii) 
+inc      = 77.00902477777493            # orbital inclination
+ecc      = 0.0                              # eccentricity
+omega    = 0                             # longitude of periastron
+
+rho_star = (3*np.pi)/(6.67259e-8*(period*86400)**2)*(aRs)**3     # stellar density (g/cm^3) from a/Rs
+
+
+-----wasp63b-----
+spec_file = 'wasp63b-nrs1.xc'
+name=spec_file.split('.')[0]
+lc_dir = './lcs/'
+
+if os.path.isdir('./outputs/'+name) is False:
+    os.mkdir('./outputs/'+name)
+save_dir = './outputs/'+name+'/'
+
+grating = 'G395H' 
+ld_model = 'mps1'
+ld_type = 'nonlinear'
+# ld_type = 'quadratic'
+
+'''parameters for limb darkening calculations'''
+Teff = 5550  
+logg = 4.01 
+M_H = 0.08 #metallicity
+
+'''transit parameters'''  #using parameters consistent with MIRI results 
+T0       = 60706.396691555114             # BJD time of inferior conjunction
+period   = 4.37808                        # orbital period (days) BJD_TDB
+Rp       = 0.07804810760292251            # planet radius (in units of stellar radii)
+aRs      = 6.520201434082322              # semi-major axis (input a/Rs so units of stellar radii) 
+inc      = 87.88988403225949              # orbital inclination
+ecc      = 0.0                            # eccentricity
+omega    = 0                              # longitude of periastron
+
+rho_star = (3*np.pi)/(6.67259e-8*(period*86400)**2)*(aRs)**3     # stellar density (g/cm^3) from a/Rs
+
+-----wasp107b-----
+spec_file = 'wasp107b-nrs1.xc'
+name=spec_file.split('.')[0]
+lc_dir = './lcs/'
+
+if os.path.isdir('./outputs/'+name) is False:
+    os.mkdir('./outputs/'+name)
+save_dir = './outputs/'+name+'/'
+
+grating = 'G395H' 
+ld_model = 'mps1'
+ld_type = 'nonlinear'
+# ld_type = 'quadratic'
+
+'''parameters for limb darkening calculations'''
+Teff = 5550  
+logg = 4.01 
+M_H = 0.08 #metallicity
+
+'''transit parameters'''  #using parameters consistent with MIRI results 
+T0       = 60118.448844509774              # BJD time of inferior conjunction
+period   = 5.721474                        # orbital period (days) BJD_TDB
+Rp       = 0.1442548550670226              # planet radius (in units of stellar radii)
+aRs      = 17.24350086310555               # semi-major axis (input a/Rs so units of stellar radii) 
+inc      = 89.33459353296415               # orbital inclination
+ecc      = 0.06                            # eccentricity
+omega    = 40                              # longitude of periastron
+
+rho_star = (3*np.pi)/(6.67259e-8*(period*86400)**2)*(aRs)**3     # stellar density (g/cm^3) from a/Rs
+
+-----Wasp178b-----
+spec_file = 'wasp178b-nrs1.xc'
+name=spec_file.split('.')[0]
+lc_dir = './lcs/'
+
+#toi134 being weird
+
+if os.path.isdir('./outputs/'+name) is False:
+    os.mkdir('./outputs/'+name)
+save_dir = './outputs/'+name+'/'
+
+grating = 'G395H' 
+ld_model = 'mps1'
+ld_type = 'nonlinear'
+# ld_type = 'quadratic'
+
+'''parameters for limb darkening calculations'''
+Teff = 9360  
+logg = 4.31 
+M_H = 0.21 #metallicity
+
+'''transit parameters'''  #using parameters consistent with MIRI results 
+T0       = 60010.50916538359                    # BJD time of inferior conjunction
+period   = 4.37808                     # orbital period (days) BJD_TDB
+Rp       = 0.10731046635518635                            # planet radius (in units of stellar radii)
+aRs      = 9.193064867066578                           # semi-major axis (input a/Rs so units of stellar radii) 
+inc      = 86.61964115942803                            # orbital inclination
+ecc      = 0.0                              # eccentricity
+omega    = 0                             # longitude of periastron
+
+rho_star = (3*np.pi)/(6.67259e-8*(period*86400)**2)*(aRs)**3     # stellar density (g/cm^3) from a/Rs
